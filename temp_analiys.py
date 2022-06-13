@@ -51,10 +51,6 @@ grouped_mean=meteo_data.groupby('date').mean().rename(columns={'Temperature_Cels
                                                                'VPD': 'mean_vpd',
                                                                'DEWPOINT_Celsius': 'mean_dewpoint_celsius'})
 
-
-# In[13]:
-
-
 #Розрахунок середніх денних показників та виокремлення окремої колонки активних середньодобових температур,
 #де середньодобова температура більша 10 град. цельсія.
 grouped_mean['act_mean_temperature_celsius']=grouped_mean['mean_temperature_celsius'].apply(lambda x: x if x >10 else 0)
