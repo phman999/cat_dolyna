@@ -1,6 +1,6 @@
 import pandas as pd
 import xlwings as xw
-import xlrd
+#import xlrd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
